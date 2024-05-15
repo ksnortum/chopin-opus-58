@@ -13,7 +13,7 @@ titlePage = \bookpart {
 
   \markup { \center-column {
     \vspace #14
-    \fill-line { \abs-fontsize #36 \bold "Sonata No.3" }
+    \fill-line { \abs-fontsize #36 \bold "Sonata No. 3" }
     \vspace #3
     \fill-line { \abs-fontsize #20 "Opus 58" }
     \vspace #4

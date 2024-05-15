@@ -1066,7 +1066,7 @@ leftHandLower = \relative {
     << 
       { a16~ a2 } 
       \new Voice { 
-        \voiceThree  \hideNoteHead a16^( \tupletOff \tuplet 3/2 { g'8)
+        \voiceThree \hideNoteHead a16^( \tupletOff \tuplet 3/2 { g'8)
           fs8. e16  \staffUp \voiceFour b'8[ a] r } 
       } 
     >> |
