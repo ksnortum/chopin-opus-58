@@ -142,7 +142,6 @@ rightHandUpper = \relative {
   \scaleDurations 2/3 {
     b8[( as gs ds b gs']  b[ as gs ds b gs'] |
     \oneVoice b8[ gs e' ds b gs]  cs,[ ds as b gs gs'] |
-    % like 28 (14 bars)
     \voiceOne b8[ gs fs e b gs']  b[ gs fs e b gs'] |
     b8[ gs fs e b gs']  cs[ gs fs e cs a'_~] |
     a8[ gs fs e b gs'])  gs[-\slurShapeK ( e ds cs gs e'] |
@@ -207,7 +206,6 @@ rightHandUpper = \relative {
       { as'8[ gs! g fs f e]  b'[ a ds, cs! b fss']) } 
       \new Voice { \voiceFour s2 s8 \hideNoteHead e_~ \forceHShiftB e4 s2 } 
     >> |
-    % like 28 (seven bars)
     b'8[( gs fs e b gs']  b[ gs fs e b gs'] |
     b8[ gs fs e b gs']  cs[ gs fs e cs a']_~ |
     a8[ gs fs e b gs'])  gs[( e ds cs gs e'] |
@@ -317,7 +315,6 @@ rightHandLower = \relative {
   \scaleDurations 2/3 {
     b'2*1/2 gs4.*1/3 ds4*1/2 b4  b'2*1/2 gs4.*1/3 ds4*1/2 b4 |
     s1. |
-    % like 28 (14 bars)
     b'2*1/4 gs4.*2/3 e4*1/2 b4  b'2*1/4 gs4.*2/3 e4*1/2 b4 |
     b'2*1/4 gs4.*2/3 e4*1/2 b4  cs'2*1/4 gs4.*2/3 e4*1/2 cs4 |
     b'4*1/2 gs4.*2/3 e4*1/2 b4  gs'2*1/4 e4.*2/3 cs4*1/2 gs4 |
@@ -359,7 +356,6 @@ rightHandLower = \relative {
     \key e \major 
     gs'2 s4 fss2 s4 |
     as2 s4 b2*1/4 a4*1/2 ds,4 b |
-    % like 28 (seven bars)
     b'2*1/4 gs4.*2/3 e4*1/2 b4  b'2*1/4 gs4.*2/3 e4*1/2 b4 |
     b'2*1/4 gs4.*2/3 e4*1/2 b4  cs'2*1/4 gs4.*2/3 e4*1/2 cs4 |
     b'4*1/2 gs4.*2/3 e4*1/2 b4  gs'2*1/4 e4.*2/3 cs4*1/2 gs4 |
@@ -567,7 +563,6 @@ leftHandLower = \relative {
   \forceHShiftA gs1~ |
   \oneVoice <gs ds'>2 <ds ds'> |
   <gs ds'>2 r |
-  % like 28 (14 bars)
   % e, not <e b'>: Urtext
   \voiceTwo e1-\slurShapeJ ^( |
   \oneVoice gs'4.\> fs8 \after 4 \! <a, e'>2 |
@@ -614,7 +609,6 @@ leftHandLower = \relative {
   \key e \major
   <e cs'>2( <ds ds'> |
   <cs e'>4)\arpeggio r8 \voiceTwo c( b4)\arpeggio s |
-  % like 28 (seven bars)
   \oneVoice <e b'>1( |
   gs'4.\> fs8 \after 4 \! <a, e'>2 |
   <e e'>2) <cs gs' e'>~\arpeggio |
@@ -930,7 +924,6 @@ pedal = {
   \barNumberCheck 73
   s1 * 4 |
   s4\sd s\su s4..-\tweak Y-offset -1 \sd s16\su |
-  % like 28 
   s2. s4\sd |
   s4 s2.\su |
   s2 s\sd |

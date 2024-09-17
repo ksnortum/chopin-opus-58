@@ -105,10 +105,14 @@ slurShapeY = \shape #'(
                         ((0 . 2) (0 . 2) (0 . 0) (0 . 0))
                         ) \etc
 
+tieShapeA = \shape #'((0 . 0) (0 . -2) (0 . -1.5) (0 . 0)) \etc
+
 beamPositionsA = \tweak Beam.positions #'(2.5 . 2.5) \etc
 
 moveOttavaA = \offset OttavaBracket.Y-offset 0.5 \etc
 moveOttavaB = \offset OttavaBracket.Y-offset 0.75 \etc
+moveNoteA = \once \override Score.NoteColumn.X-offset = 0.4
+moveClefA = \once \override Staff.Clef.extra-offset = #'(0.2 . 0)
 
 extraSpacingA = 
   \once \override Staff.NoteHead.extra-spacing-width = #'(-1 . 1 )
@@ -247,7 +251,7 @@ rightHandUpper = \relative {
   \barNumberCheck 97
   b16 c ds a' fs c  b c ds a' fs c |
   b16) r r8 c[( b16]) r r8 fs'[( |
-  b,16]) r r8 <c c'>( b' <ds, a'> ds' |
+  \moveNoteA b,16]) r r8 <c c'>( b' <ds, a'> ds' |
   \clef treble \voiceOne e4 b8 c4 ds8 |
   e4 b8 c4 ds8 |
   e4 e8 s4. |
@@ -270,7 +274,7 @@ rightHandUpper = \relative {
   b'2. |
   as4. a |
   gs4. g |
-  e4 f8 <a, a'> b \clef bass <ds, ds'> |
+  e4 f8 <a, a'> b \moveClefA \clef bass <ds, ds'> |
   <e e'>8) s \clef treble s s4. |
   s2. |
   
@@ -795,7 +799,7 @@ leftHandUpper = \relative {
   bf4 s8 ef,4 s8
   af4 s8 \clef treble \voiceTwo g!4 af8 |
   bf4 s8 c4 s8 |
-  c4 \tieToNextNote gf'4*1/2~ df gf d8 |
+  c4 \tieToNextNote gf'4*1/2-\tieShapeA ~ df gf d8 |
   s2. * 3 |
   
   \barNumberCheck 185

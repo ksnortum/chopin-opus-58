@@ -596,8 +596,6 @@ rightHandLower = \relative {
   \barNumberCheck 57
   s1 * 4 |
   \voiceOne a'''2 s2 |
-  % s1 * 2 |
-%   b,4 s2. |
   s1 |
   s2 cs,4 s |
   b4 s2. |
@@ -1877,7 +1875,8 @@ pedal = {
   \barNumberCheck 185
   s1 |
   s2\sd s4..\su\sd s16\su |
-  s4..\sd s16\su s4..-\tweak Y-offset -2 \sd s16\su |
+  s4..-\tweak extra-offset #'(0 . -0.5) \sd s16\su s4..-\tweak Y-offset -2
+    \sd s16\su |
   s2\sd s4..\su\sd s16\su |
   s2\sd s\su |
   s2\sd s4..\su\sd s16\su |
